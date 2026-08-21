@@ -15,7 +15,21 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* SINGLE PAGE - ALL SECTIONS */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <Services />
+              <Work />
+              <About />
+              <Contact />
+            </>
+          }
+        />
+
+        {/* INDIVIDUAL PAGES */}
         <Route path="/services" element={<Services />} />
         <Route path="/work" element={<Work />} />
         <Route path="/about" element={<About />} />

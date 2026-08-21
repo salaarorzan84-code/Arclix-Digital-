@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 function Services() {
   return (
     <main>
-      {/* SERVICES PAGE */}
       <section className="services-section">
         <div className="container">
           
@@ -20,8 +19,8 @@ function Services() {
               </h2>
 
               <p>
-                Strategy, design, and development
-                to help your brand grow online.
+                Strategy, design, and development to help your brand
+                stand out, connect with the right audience, and grow online.
               </p>
             </div>
           </div>
@@ -31,13 +30,13 @@ function Services() {
             {/* SERVICE 1 */}
             <div className="service-card">
               <span className="service-number">01</span>
-
               <div className="service-icon">✦</div>
 
               <h3>Brand Strategy</h3>
 
               <p>
-                Clear brand identity built for the right audience.
+                Clear brand positioning and strategy built to connect
+                with the right audience.
               </p>
 
               <Link to="/contact">
@@ -48,13 +47,13 @@ function Services() {
             {/* SERVICE 2 */}
             <div className="service-card">
               <span className="service-number">02</span>
-
               <div className="service-icon">◈</div>
 
               <h3>Web Design</h3>
 
               <p>
-                Modern websites that engage and convert visitors.
+                Modern, professional websites designed to engage
+                visitors and create strong digital experiences.
               </p>
 
               <Link to="/contact">
@@ -65,13 +64,64 @@ function Services() {
             {/* SERVICE 3 */}
             <div className="service-card">
               <span className="service-number">03</span>
-
               <div className="service-icon">⌘</div>
 
               <h3>Development</h3>
 
               <p>
-                Fast, responsive experiences built with modern technology.
+                Fast, responsive, and reliable digital solutions
+                built with modern technology.
+              </p>
+
+              <Link to="/contact">
+                Let's Talk ↗
+              </Link>
+            </div>
+
+            {/* SERVICE 4 */}
+            <div className="service-card">
+              <span className="service-number">04</span>
+              <div className="service-icon">✧</div>
+
+              <h3>UI / UX Design</h3>
+
+              <p>
+                User-focused interfaces and experiences designed
+                to make every interaction simple and effective.
+              </p>
+
+              <Link to="/contact">
+                Let's Talk ↗
+              </Link>
+            </div>
+
+            {/* SERVICE 5 */}
+            <div className="service-card">
+              <span className="service-number">05</span>
+              <div className="service-icon">◎</div>
+
+              <h3>Digital Marketing</h3>
+
+              <p>
+                Smart digital strategies that increase visibility,
+                attract the right audience, and drive growth.
+              </p>
+
+              <Link to="/contact">
+                Let's Talk ↗
+              </Link>
+            </div>
+
+            {/* SERVICE 6 */}
+            <div className="service-card">
+              <span className="service-number">06</span>
+              <div className="service-icon">↗</div>
+
+              <h3>Creative Direction</h3>
+
+              <p>
+                Strong creative ideas and visual direction that give
+                your brand a clear and memorable identity.
               </p>
 
               <Link to="/contact">
