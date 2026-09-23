@@ -569,6 +569,7 @@ img {
   letter-spacing: -2.5px;
 }
 
+
 .work-heading-row h2 span {
   color: var(--gold-light);
 }
@@ -608,7 +609,7 @@ img {
 }
 
 .project-large .project-visual {
-  min-height: 540px;
+  min-height: 420px;
 }
 
 .project-image {
@@ -675,7 +676,7 @@ img {
   position: relative;
   z-index: 2;
 
-  color: var(--gold-light);
+  color: var(--dark-blue-navy);
 
   font-size: clamp(42px, 8vw, 100px);
   letter-spacing: 12px;
@@ -1399,23 +1400,23 @@ img {
     align-items: center;
   }
 
-  .hero-bg-image {
-    object-position: 65% center;
-  }
+ .hero-bg-image {
+  object-fit: contain;
+}
 
-  .hero-overlay {
-    background:
-      linear-gradient(
-        90deg,
-        rgba(8, 9, 15, 0.94) 0%,
-        rgba(8, 9, 15, 0.76) 100%
-      ),
-      linear-gradient(
-        180deg,
-        rgba(8, 9, 15, 0.1),
-        rgba(8, 9, 15, 0.7)
-      );
-  }
+.hero-overlay {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 9, 15, 0.94) 0%,
+      rgba(8, 9, 15, 0.76) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(8, 9, 15, 0.1),
+      rgba(8, 9, 15, 0.7)
+    );
+}
 
   .hero-eyebrow {
     margin-bottom: 18px;

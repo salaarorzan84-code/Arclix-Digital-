@@ -8,7 +8,7 @@ function Home() {
         <section className="hero">
           <img
             src="/images/hero-image.jpg"
-            alt="Arclix Digital"
+            alt="Arclix Digital - Modern Web Development"
             className="hero-bg-image"
           />
 
@@ -16,30 +16,44 @@ function Home() {
 
           <div className="container hero-container">
             <div className="hero-content">
+
+              {/* Eyebrow */}
               <div className="hero-eyebrow">
-                CREATIVE DIGITAL AGENCY
+                WEB DESIGN • DEVELOPMENT • DIGITAL SOLUTIONS
               </div>
 
+              {/* Main Heading */}
               <h1>
-                We build digital experiences
+                Modern websites
                 <br />
-                <span>that drive real growth.</span>
+                <span>built for your business.</span>
               </h1>
 
+              {/* Description */}
               <p className="hero-description">
-                Strategy-led branding and high-performing websites designed
-                to turn attention into measurable results.
+                I build modern, fast and responsive websites that help
+                businesses establish a strong online presence and attract
+                more customers.
               </p>
 
+              {/* Buttons */}
               <div className="hero-actions">
                 <Link to="/work" className="hero-btn hero-btn-primary">
-                  View Our Work <span>↗</span>
+                  View My Work <span>↗</span>
                 </Link>
 
                 <Link to="/contact" className="hero-btn hero-btn-secondary">
-                  Start a Project <span>↗</span>
+                  Let's Work Together <span>↗</span>
                 </Link>
               </div>
+
+              {/* Trust Points */}
+              <div className="hero-trust">
+                <span>✓ Mobile Responsive</span>
+                <span>✓ Modern Design</span>
+                <span>✓ Business Focused</span>
+              </div>
+
             </div>
           </div>
         </section>

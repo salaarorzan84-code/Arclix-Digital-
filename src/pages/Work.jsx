@@ -3,41 +3,46 @@ import { Link } from "react-router-dom";
 function Work() {
   return (
     <main>
-      {/* WORK PAGE */}
       <section className="work-section">
         <div className="container">
+
+          {/* SECTION HEADING */}
           <div className="work-heading">
             <div className="section-label">
-              SELECTED WORK
+              SELECTED PROJECTS
             </div>
 
             <div className="work-heading-row">
-              <h2>
-                Work that creates
+              <h2 className="premium-work-title">
+                Websites that
                 <br />
-                <span>real impact.</span>
+                <span>make businesses stand out.</span>
               </h2>
 
               <p>
-                Selected brands, websites, and digital projects built for impact.
+                A selection of modern websites I have designed and developed
+                for businesses, with a focus on strong visuals, responsive
+                design and a professional online presence.
               </p>
             </div>
           </div>
 
+
           <div className="work-grid">
 
-            {/* PROJECT 1 */}
+            {/* PROJECT 1 — PRIME MOVE UAE */}
             <article className="project-card project-large">
+
               <div className="project-visual visual-one">
                 <img
                   src="/images/project-1.jpg"
-                  alt="Nova Luxury"
+                  alt="Prime Move UAE website"
                   className="project-image"
                 />
 
                 <div className="visual-content">
                   <div className="visual-logo">
-                    NOVA
+                    
                   </div>
 
                   <div className="visual-line"></div>
@@ -48,31 +53,37 @@ function Work() {
               <div className="project-info">
                 <div>
                   <span className="project-category">
-                    BRANDING / WEB
+                    BUSINESS WEBSITE / WEB DEVELOPMENT
                   </span>
 
-                  <h3>Nova Luxury</h3>
+                  <h3>Prime Move UAE</h3>
                 </div>
 
-                <Link to="/contact">
-                  Start Similar Project ↗
-                </Link>
+                <a
+                  href="https://prime-move-uae-5va2.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Live Website ↗
+                </a>
               </div>
             </article>
 
-            {/* PROJECT 2 */}
+
+            {/* PROJECT 2 — ARCLIX DIGITAL */}
             <article className="project-card">
+
               <div className="project-visual visual-two">
                 <img
                   src="/images/project-2.jpg"
-                  alt="Vertex Growth"
+                  alt="Arclix Digital website"
                   className="project-image"
                 />
 
                 <div className="dashboard-card">
                   <div className="dashboard-top">
-                    <span>GROWTH</span>
-                    <span>+84.6%</span>
+                    <span>WEB DEVELOPMENT</span>
+                    <span>100%</span>
                   </div>
 
                   <div className="chart">
@@ -89,66 +100,79 @@ function Work() {
               <div className="project-info">
                 <div>
                   <span className="project-category">
-                    MARKETING
+                    PORTFOLIO / WEB DESIGN
                   </span>
 
-                  <h3>Vertex Growth</h3>
+                  <h3>Arclix Digital</h3>
                 </div>
 
-                <Link to="/contact">
-                  Start Similar Project ↗
+                <Link to="/">
+                  View Website ↗
                 </Link>
               </div>
             </article>
 
-            {/* PROJECT 3 */}
+
+            {/* PROJECT 3 — D2D WASTE REMOVAL */}
             <article className="project-card">
+
               <div className="project-visual visual-three">
                 <img
                   src="/images/project-3.jpg"
-                  alt="Arc Store"
+                  alt="D2D Waste Removal website"
                   className="project-image"
                 />
 
                 <div className="ecommerce-window">
-                  <span>ARC / STORE</span>
+                  <span>D2D WASTE REMOVAL</span>
 
                   <strong>
-                    Essential
+                    Clean Space.
                     <br />
-                    Objects.
+                    Hassle-Free Service.
                   </strong>
 
-                  <Link to="/contact">
-                    START PROJECT
-                  </Link>
+                  <a
+                    href="https://dubai-junk-removal-lhlg.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    VIEW LIVE WEBSITE ↗
+                  </a>
                 </div>
               </div>
 
               <div className="project-info">
                 <div>
                   <span className="project-category">
-                    E-COMMERCE
+                    BUSINESS WEBSITE / WEB DESIGN
                   </span>
 
-                  <h3>Arc Store</h3>
+                  <h3>D2D Waste Removal</h3>
                 </div>
 
-                <Link to="/contact">
-                  Start Similar Project ↗
-                </Link>
+                <a
+                  href="https://dubai-junk-removal-lhlg.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Live Website ↗
+                </a>
               </div>
             </article>
 
           </div>
 
+
+          {/* CTA */}
           <div className="work-footer">
-            <span>READY TO BUILD SOMETHING GREAT?</span>
+            <span>HAVE A PROJECT IN MIND?</span>
 
             <Link to="/contact">
               Let's Talk <span>↗</span>
             </Link>
           </div>
+
         </div>
       </section>
     </main>
