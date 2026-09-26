@@ -5,131 +5,150 @@ function Services() {
     <main>
       <section className="services-section">
         <div className="container">
-          
+
+          {/* SECTION LABEL */}
           <div className="section-label">
-            WHAT WE DO
+            WHAT I DO
           </div>
 
+          {/* HEADING */}
           <div className="services-heading">
             <div className="services-heading-row">
               <h2>
-                Services built for
+                Digital services
                 <br />
-                <span>digital growth.</span>
+                <span>built to perform.</span>
               </h2>
 
               <p>
-                Strategy, design, and development to help your brand
-                stand out, connect with the right audience, and grow online.
+                I design and build modern digital experiences that help
+                businesses look professional, reach the right audience,
+                and turn visitors into customers.
               </p>
             </div>
           </div>
 
+          {/* SERVICES GRID */}
           <div className="services-grid">
 
-            {/* SERVICE 1 */}
-            <div className="service-card">
-              <span className="service-number">01</span>
-              <div className="service-icon">✦</div>
+            {/* SERVICE 01 */}
+            <Link
+              to="/services/web-design"
+              className="service-card"
+            >
+              <div className="service-top">
+                <span className="service-number">01</span>
+                <div className="service-icon">✦</div>
+              </div>
 
-              <h3>Brand Strategy</h3>
+              <div className="service-content">
+                <h3>Web Design</h3>
 
-              <p>
-                Clear brand positioning and strategy built to connect
-                with the right audience.
-              </p>
+                <p>
+                  Clean, modern and professional website designs created
+                  to represent your business and make a strong first
+                  impression.
+                </p>
+              </div>
 
-              <Link to="/contact">
-                Let's Talk ↗
-              </Link>
-            </div>
+              <div className="service-link">
+                Explore Service
+                <span>↗</span>
+              </div>
+            </Link>
 
-            {/* SERVICE 2 */}
-            <div className="service-card">
-              <span className="service-number">02</span>
-              <div className="service-icon">◈</div>
 
-              <h3>Web Design</h3>
+            {/* SERVICE 02 */}
+            <Link
+              to="/services/web-development"
+              className="service-card"
+            >
+              <div className="service-top">
+                <span className="service-number">02</span>
+                <div className="service-icon">◈</div>
+              </div>
 
-              <p>
-                Modern, professional websites designed to engage
-                visitors and create strong digital experiences.
-              </p>
+              <div className="service-content">
+                <h3>Web Development</h3>
 
-              <Link to="/contact">
-                Let's Talk ↗
-              </Link>
-            </div>
+                <p>
+                  Fast, responsive and reliable websites built with
+                  modern technologies for a smooth experience across
+                  desktop and mobile.
+                </p>
+              </div>
 
-            {/* SERVICE 3 */}
-            <div className="service-card">
-              <span className="service-number">03</span>
-              <div className="service-icon">⌘</div>
+              <div className="service-link">
+                Explore Service
+                <span>↗</span>
+              </div>
+            </Link>
 
-              <h3>Development</h3>
 
-              <p>
-                Fast, responsive, and reliable digital solutions
-                built with modern technology.
-              </p>
+            {/* SERVICE 03 */}
+            <Link
+              to="/services/paid-advertising"
+              className="service-card"
+            >
+              <div className="service-top">
+                <span className="service-number">03</span>
+                <div className="service-icon">◎</div>
+              </div>
 
-              <Link to="/contact">
-                Let's Talk ↗
-              </Link>
-            </div>
+              <div className="service-content">
+                <h3>Paid Advertising</h3>
 
-            {/* SERVICE 4 */}
-            <div className="service-card">
-              <span className="service-number">04</span>
-              <div className="service-icon">✧</div>
+                <p>
+                  Targeted advertising campaigns designed to reach the
+                  right audience, generate quality traffic and support
+                  business growth.
+                </p>
+              </div>
 
-              <h3>UI / UX Design</h3>
+              <div className="service-link">
+                Explore Service
+                <span>↗</span>
+              </div>
+            </Link>
 
-              <p>
-                User-focused interfaces and experiences designed
-                to make every interaction simple and effective.
-              </p>
 
-              <Link to="/contact">
-                Let's Talk ↗
-              </Link>
-            </div>
+            {/* SERVICE 04 */}
+            <Link
+              to="/services/landing-pages"
+              className="service-card"
+            >
+              <div className="service-top">
+                <span className="service-number">04</span>
+                <div className="service-icon">↗</div>
+              </div>
 
-            {/* SERVICE 5 */}
-            <div className="service-card">
-              <span className="service-number">05</span>
-              <div className="service-icon">◎</div>
+              <div className="service-content">
+                <h3>Landing Pages</h3>
 
-              <h3>Digital Marketing</h3>
+                <p>
+                  High-quality landing pages focused on clear messaging,
+                  strong calls to action and converting visitors into
+                  potential customers.
+                </p>
+              </div>
 
-              <p>
-                Smart digital strategies that increase visibility,
-                attract the right audience, and drive growth.
-              </p>
-
-              <Link to="/contact">
-                Let's Talk ↗
-              </Link>
-            </div>
-
-            {/* SERVICE 6 */}
-            <div className="service-card">
-              <span className="service-number">06</span>
-              <div className="service-icon">↗</div>
-
-              <h3>Creative Direction</h3>
-
-              <p>
-                Strong creative ideas and visual direction that give
-                your brand a clear and memorable identity.
-              </p>
-
-              <Link to="/contact">
-                Let's Talk ↗
-              </Link>
-            </div>
+              <div className="service-link">
+                Explore Service
+                <span>↗</span>
+              </div>
+            </Link>
 
           </div>
+
+          {/* BOTTOM CTA */}
+          <div className="services-footer">
+            <span>HAVE A PROJECT IN MIND?</span>
+
+            <Link to="/contact">
+              Let's Talk <span>↗</span>
+            </Link>
+          </div>
+
         </div>
       </section>
     </main>
