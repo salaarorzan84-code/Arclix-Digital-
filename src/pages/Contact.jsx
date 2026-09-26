@@ -1,4 +1,11 @@
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6";
+
 function Contact() {
+  const phoneNumber = "923107127757";
+  const displayPhone = "0310 7127757";
+  const emailAddress = "arvionwebstudio@gmail.com";
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -11,7 +18,7 @@ function Contact() {
     const message = form.message.value;
 
     const subject = encodeURIComponent(
-      `New Website Project Inquiry - ${name}`
+      `New Project Inquiry - ${name}`
     );
 
     const body = encodeURIComponent(
@@ -24,7 +31,8 @@ Project Details:
 ${message}`
     );
 
-    window.location.href = `mailto:hello@arclixdigital.com?subject=${subject}&body=${body}`;
+    window.location.href =
+      `mailto:${emailAddress}?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -50,28 +58,49 @@ ${message}`
             </p>
           </div>
 
+
           {/* CONTACT GRID */}
           <div className="contact-grid">
 
             {/* CONTACT INFO */}
             <div className="contact-info">
 
+              {/* EMAIL */}
               <div className="contact-info-item">
                 <span>EMAIL</span>
 
-                <a href="mailto:hello@arclixdigital.com">
-                  hello@arclixdigital.com
+                <a href={`mailto:${emailAddress}`}>
+                  {emailAddress}
                 </a>
               </div>
 
+
+              {/* PHONE */}
               <div className="contact-info-item">
                 <span>PHONE</span>
 
-                <a href="tel:+923001234567">
-                  +92 300 1234567
+                <a href="tel:+923107127757">
+                  {displayPhone}
                 </a>
               </div>
 
+
+              {/* WHATSAPP */}
+              <div className="contact-info-item">
+                <span>WHATSAPP</span>
+
+                <a
+                  href={`https://wa.me/${phoneNumber}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="whatsapp-link"
+                >
+                  Chat on WhatsApp ↗
+                </a>
+              </div>
+
+
+              {/* LOCATION */}
               <div className="contact-info-item">
                 <span>LOCATION</span>
 
@@ -80,19 +109,72 @@ ${message}`
                 </p>
               </div>
 
-              {/* AVAILABILITY */}
-              <div className="contact-availability">
-                <span className="availability-dot"></span>
 
-                <div>
-                  <strong>Available for new projects</strong>
-                  <p>
-                    Web design & development
-                  </p>
+              {/* SOCIAL MEDIA */}
+              <div className="contact-socials">
+
+                <span>SOCIAL MEDIA</span>
+
+                <div className="contact-social-links">
+
+                  {/* FACEBOOK */}
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61592742513131"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                    title="Facebook"
+                  >
+                    <FaFacebookF />
+                  </a>
+
+
+                  {/* INSTAGRAM */}
+                  <a
+                    href="https://www.instagram.com/arvionwebstudio/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                    title="Instagram"
+                  >
+                    <FaInstagram />
+                  </a>
+
+
+                  {/* TIKTOK */}
+                  <a
+                    href="https://tiktok.com/@arvion.web.studio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="TikTok"
+                    title="TikTok"
+                  >
+                    <FaTiktok />
+                  </a>
+
                 </div>
               </div>
 
+
+              {/* AVAILABILITY */}
+              <div className="contact-availability">
+
+                <span className="availability-dot"></span>
+
+                <div>
+                  <strong>
+                    Available for new projects
+                  </strong>
+
+                  <p>
+                    Web design, development & advertising
+                  </p>
+                </div>
+
+              </div>
+
             </div>
+
 
             {/* CONTACT FORM */}
             <form
@@ -114,6 +196,7 @@ ${message}`
                   />
                 </div>
 
+
                 <div className="form-group">
                   <label>EMAIL ADDRESS</label>
 
@@ -127,6 +210,7 @@ ${message}`
 
               </div>
 
+
               {/* COMPANY + SERVICE */}
               <div className="form-row">
 
@@ -139,6 +223,7 @@ ${message}`
                     placeholder="Your company name"
                   />
                 </div>
+
 
                 <div className="form-group">
                   <label>SERVICE</label>
@@ -156,12 +241,16 @@ ${message}`
                       Web Design
                     </option>
 
-                    <option value="Website Development">
-                      Website Development
+                    <option value="Web Development">
+                      Web Development
                     </option>
 
-                    <option value="Landing Page">
-                      Landing Page
+                    <option value="Landing Pages">
+                      Landing Pages
+                    </option>
+
+                    <option value="Paid Advertising">
+                      Paid Advertising
                     </option>
 
                     <option value="Website Redesign">
@@ -175,6 +264,7 @@ ${message}`
                 </div>
 
               </div>
+
 
               {/* MESSAGE */}
               <div className="form-group">
@@ -190,6 +280,7 @@ ${message}`
                 ></textarea>
 
               </div>
+
 
               {/* SUBMIT */}
               <button
