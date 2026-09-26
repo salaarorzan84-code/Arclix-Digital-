@@ -5533,3 +5533,32 @@ body {
   }
 
 }
+/* =========================
+   ARVION LOGO
+========================= */
+
+.logo-mark {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Agar logo image use ho rahi hai */
+.logo-mark img {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
+}
